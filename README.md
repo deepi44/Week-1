@@ -1,63 +1,97 @@
-🔹 Problem Statement
+🧩 Week 1 – Design Phase Summary
+🧠 Problem Statement
 
-The rapid adoption of solar energy has made it one of the most sustainable solutions for meeting global power demands.
-However, maintaining the efficiency of solar panels is a major challenge. Dust accumulation, physical damage, and improper cleaning reduce energy output and increase maintenance costs.
-Traditional inspection methods require manual checking, which is time-consuming, expensive, and sometimes unsafe.To address this issue, this project aims to develop an AI-based Solar Energy Image Classifier that can automatically identify the condition of solar panels — such as Clean, Dusty, or Broken — using Convolutional Neural Network (CNN) and image processing techniques.
-The trained model classifies solar panel images with high accuracy and can be integrated into a web application for real-time analysis.
-This system helps promote renewable energy efficiency, reduces human effort, and supports sustainable energy management.
+The world is rapidly adopting renewable energy sources, with solar power playing a major role in sustainability.
+However, the efficiency of solar panels decreases when they are covered with dust, bird droppings, snow, or damaged physically or electrically.
+Manual inspection of large solar farms is time-consuming, risky, and inefficient.
 
-✅ Solution for Problem Statement
+To address this issue, the project aims to design an AI-based Solar Panel Condition Classification System that can automatically detect panel conditions using deep-learning and image-processing techniques.
 
-To overcome the challenges in monitoring solar panel efficiency, this project proposes an AI-based Solar Energy Image Classifier using Convolutional Neural Networks (CNN) and image processing.
-The system automatically identifies whether a solar panel is Clean, Dusty, or Broken from input images, eliminating the need for manual inspection.The solution is developed using the Google Colab environment with TensorFlow/Keras for model training.The CNN model is trained on a Kaggle solar panel image dataset, which contains different categories of solar panel conditions.
-Image preprocessing techniques such as resizing, normalization, and data augmentation (flip, rotation, zoom) are applied to improve accuracy and model performance.
-After training, the model achieved an accuracy of around 97–98% in classifying solar panel conditions.
-The trained model is then converted to TensorFlow.js format and integrated into a web application, allowing users to upload solar panel images and instantly get predictions on their condition.
+💡 Solution Approach
 
-This automated classification system helps:
+An automated CNN-based image-classification model is proposed to identify solar-panel conditions accurately and quickly.
+The system uses Convolutional Neural Networks (CNNs) to learn image features and classify panels into categories such as:
 
-Reduce manual labor and inspection time
+Clean
 
-Increase solar panel maintenance efficiency
+Dusty
 
-Promote renewable energy usage and sustainability
+Bird-drop
 
-By implementing this AI-based solution, industries, institutions, and individuals can efficiently monitor solar energy systems and support a cleaner, sustainable environment.
+Electrical Damage
 
-📁 Dataset Name
+Physical Damage
 
-Solar Panel Image Classifier
+Snow-Covered
 
-🧩 About the Dataset
+The model is trained, tested, and evaluated entirely on Google Colab using TensorFlow/Keras with GPU acceleration.
 
-The dataset used in this project contains real-world images of solar panels under different conditions.
-It is designed for image classification and fault detection in solar energy systems.
-The images are categorized into three main classes:
+🗂️ Dataset Information
 
-Class Name	Description
-Clean	Solar panels that are clean and functioning properly
-Dusty	Panels covered with dust or dirt, reducing power efficiency
-Broken	Damaged or cracked panels that require maintenance or replacement
+Dataset Name: Solar Panel Images Dataset
 
-Each category contains hundreds of images taken from various solar farms and sources.
-The dataset helps the CNN model learn to visually differentiate between clean, dusty, and broken solar panels.
+Source: Kaggle – Solar Panel Images Dataset
 
-Before training, all images are resized to 224×224 pixels and normalized.
-Data augmentation (random rotation, flipping, zooming) is applied to improve accuracy and generalization.
-This dataset is ideal for renewable energy-based AI image processing projects as it focuses on solar panel maintenance and sustainability.
+Description: Contains images of solar panels under six different conditions for use in image-classification tasks.
 
-Source: Kaggle
+Purpose: Supports AI-based renewable-energy maintenance by enabling automatic detection of panel conditions.
 
-⚙️ Main Steps of the Project
+🧱 Design Activities
 
-Collect, Clean & Preprocess the Dataset
+Collected and explored dataset from Kaggle.
 
-Design & Train the CNN Model Using Teachable Machine / Google Colab
+Designed CNN architecture with multiple convolution and pooling layers.
 
-Validate, Evaluate & Optimize the Trained Model
+Selected TensorFlow/Keras framework and Google Colab GPU for training.
 
-Develop an Interactive Web-Based Interface
+Planned preprocessing: image resizing (224×224), normalization, and train/test split.
 
-Integrate, Test & Refine the Complete Application
+Determined evaluation metrics such as accuracy and loss visualization.
 
-Deploy, Document & Present the Final Solution
+Outcome:
+Week 1 successfully completed the system design phase, finalized dataset source, model architecture, and training workflow.
+
+💻 Week 2 – Implementation Phase Summary
+⚙️ Implementation Overview
+
+During Week 2, the designed CNN model was implemented and trained using the Solar Panel Image Dataset on Google Colab.
+The notebook handled data loading, preprocessing, model training, and result visualization.
+
+🧩 Implementation Steps
+
+1️⃣ Imported the Kaggle dataset into Google Colab using the Kaggle API.
+2️⃣ Performed image preprocessing: resizing to 224×224 pixels, normalization, and augmentation.
+3️⃣ Built and compiled the CNN model using TensorFlow/Keras with layers:
+ - Conv2D + MaxPooling2D (for feature extraction)
+ - Flatten + Dense layers (for classification)
+ - Dropout (to reduce overfitting)
+4️⃣ Trained the model for multiple epochs and plotted accuracy/loss graphs.
+5️⃣ Evaluated model performance on validation data and tested with sample solar-panel images.
+6️⃣ Saved the trained model (solar_panel_classifier_model.h5) for future testing and deployment.
+
+📊 Results
+
+Training Accuracy: 97.4 %
+
+Validation Accuracy: 95.2 %
+
+Model File: solar_panel_classifier_model.h5
+
+Framework: TensorFlow/Keras on Google Colab
+
+Visualization: Accuracy and loss graphs generated using Matplotlib
+
+Output Example: Predicted label = Dusty 🎯 Accuracy = 97.3 %
+
+🧾 Files Added to GitHub
+
+📘 Solar_Panel_Classifier.ipynb – Google Colab notebook (training and testing)
+📄 solar_panel_classifier_model.h5 – Trained CNN model file
+📊 accuracy_loss_graph.png – Training/Validation graph
+📸 sample_predictions/ – Example classified images
+📁 dataset_info.txt – Dataset details and Kaggle source link
+
+✅ Outcome
+
+Week 2 successfully completed the implementation phase — the CNN model achieved high accuracy and demonstrated effective AI-based solar panel condition classification using Google Colab.
+This model supports renewable energy management by enabling automatic monitoring of solar panel efficiency and maintenance requirements 🌞⚡
