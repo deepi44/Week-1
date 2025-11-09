@@ -1,4 +1,5 @@
 🧩 Week 1 – Design Phase Summary
+
 🧠 Problem Statement
 
 The world is rapidly adopting renewable energy sources, with solar power playing a major role in sustainability.
