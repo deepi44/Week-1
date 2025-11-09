@@ -61,14 +61,23 @@ The notebook handled data loading, preprocessing, model training, and result vis
 🧩 Implementation Steps
 
 1️⃣ Imported the Kaggle dataset into Google Colab using the Kaggle API.
+
 2️⃣ Performed image preprocessing: resizing to 224×224 pixels, normalization, and augmentation.
+
 3️⃣ Built and compiled the CNN model using TensorFlow/Keras with layers:
+
  - Conv2D + MaxPooling2D (for feature extraction)
+ 
  - Flatten + Dense layers (for classification)
+ 
  - Dropout (to reduce overfitting)
+ 
 4️⃣ Trained the model for multiple epochs and plotted accuracy/loss graphs.
+
 5️⃣ Evaluated model performance on validation data and tested with sample solar-panel images.
+
 6️⃣ Saved the trained model (solar_panel_classifier_model.h5) for future testing and deployment.
+
 
 📊 Results
 
