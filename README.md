@@ -87,9 +87,13 @@ Output Example: Predicted label = Dusty 🎯 Accuracy = 97.3 %
 🧾 Files Added to GitHub
 
 📘 Solar_Panel_Classifier.ipynb – Google Colab notebook (training and testing)
+
 📄 solar_panel_classifier_model.h5 – Trained CNN model file
+
 📊 accuracy_loss_graph.png – Training/Validation graph
+
 📸 sample_predictions/ – Example classified images
+
 📁 dataset_info.txt – Dataset details and Kaggle source link
 
 ✅ Outcome
