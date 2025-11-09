@@ -1,0 +1,9 @@
+🧠 Trained Model File: solar_panel_classifier_model.h5
+
+The trained CNN model file contains all the learned parameters used for solar panel condition classification.
+Since the model size exceeds GitHub’s 25 MB upload limit, it is safely stored on Google Drive for easy download and reuse.
+
+You can download the trained model using the link below 👇
+
+🔗 Google Drive Link:
+https://drive.google.com/your-solar-panel-model-link-here
